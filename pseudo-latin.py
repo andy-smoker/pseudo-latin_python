@@ -32,7 +32,12 @@ def convert(s):
     else:
         return (" ".join(array))
 
-print(convert("Good day Urmo chmo throu squaer thrytm"))
+print("input 'stop' for stopning programm\n")
+while True:
+    inp = input()
+    if inp == "stop":
+        break
+    print(convert(inp))
 
 def test_passing():
     assert convert("three") == "eethray"
